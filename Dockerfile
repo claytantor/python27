@@ -4,6 +4,7 @@ FROM ubuntu:xenial
 RUN apt-get clean
 RUN apt-get upgrade
 RUN apt-get update
+RUN apt-get install locales
 
 RUN echo 'deb http://archive.ubuntu.com/ubuntu xenial main' >/etc/apt/sources.list
 RUN echo 'deb http://archive.ubuntu.com/ubuntu xenial-security main' >>/etc/apt/sources.list
